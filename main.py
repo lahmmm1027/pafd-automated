@@ -145,7 +145,7 @@ class Zlapp(Fudan):
 
         print("◉上一次提交日期为:", last_info["d"]["info"]["date"])
         # 地区从oldInfo中提取
-        last_area = last_info["d"]["oldInfo"]["area"]
+        last_area = last_info["d"]["info"]["area"]      #last_area = last_info["d"]["oldInfo"]["area"]
         print("◉上一次提交的地区是:", last_area)
         if last_area == "其他国家":
             pass
